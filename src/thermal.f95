@@ -52,7 +52,8 @@ program thermal
     ! print *, Ts(1)
   end do
 
-  print *, "maxTemp = ", maxTemp
+  ! print *, "maxTemp = ", maxTemp
+  print *, maxTemp
 
 contains
   function computeConv(T, D, L)
