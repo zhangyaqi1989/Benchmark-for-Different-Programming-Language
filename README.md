@@ -9,3 +9,5 @@ Julia: 5.860 s
 Python: more than 10 min
 ```
 
+From it, we can see Julia is a very promising language.
+
