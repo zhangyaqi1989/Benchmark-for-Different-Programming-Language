@@ -64,5 +64,5 @@ def main(N):
 
 
 if __name__ == "__main__":
-    N = 4000
+    N = 40
     main(N)
