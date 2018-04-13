@@ -1,6 +1,7 @@
 # Benchmark for different languages
 Performace comparison between C, modern Fortran, 
-[Julia](https://julialang.org/), Python
+[Julia](https://julialang.org/), Python. 
+Implementation in Python uses numpy and vectorization.
 
 On Intel(R) Core(TM) i7-2600k CPU, the running time is listed below
 ```
@@ -30,7 +31,6 @@ The comparison is plotted in below figure
 
 ![figure](images/fig-1.png)
 
-
-From it, we can see the speed of Julia is very impressive.
-It maybe the future of scientific computing. 
+Julia can match the performance of C, which is very impressive. 
+It is worth to learn. 
 
