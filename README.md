@@ -1,5 +1,5 @@
 # Benchmark for different languages
-Performace comparison between C, modern Fortran, 
+Performace comparison between C, C++, modern Fortran (F95), Java, 
 [Julia](https://julialang.org/), Python. 
 Implementation in Python uses numpy and vectorization.
 
