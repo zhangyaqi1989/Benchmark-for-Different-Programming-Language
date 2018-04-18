@@ -1,0 +1,5 @@
+.DS_Store
+*.class
+thermal_c
+thermal_cpp
+thermal_f
