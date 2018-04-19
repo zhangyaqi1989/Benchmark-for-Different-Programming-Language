@@ -67,8 +67,14 @@ function thermal()
 }
 
 
+console.time('thermal')
+thermal()
+console.timeEnd('thermal')
+
+/*
 var t0 = performance.now()
 thermal()
 var t1 = performance.now()
 console.log((t1 - t0) / 1000.0 + " s")
+*/
 
