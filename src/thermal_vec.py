@@ -24,7 +24,6 @@ def main(N):
     ENVELOP_T = 343.15
     e = 0.95
     S_B = 5.67e-8
-    E_T = 343.15
     cross_area = PI * D * D / 4.0
     k = 0.177
     Ts = DEPOSIT_T * np.ones(N)
@@ -35,7 +34,7 @@ def main(N):
     for i in range(N):
         # update temperature of i + 1 elements
         Q_convs[:i+1] = (Ts[:i+1] - ENVELOP_T) * free_area * h
-        Q_radis[:i+1] = (Ts[:i+1]**4 - E_T**4) * e * S_B * free_area
+        Q_radis[:i+1] = (Ts[:i+1]**4 - ENVELOP_T**4) * e * S_B * free_area
         Q_pres[1:i+1] = (Ts[1:i+1] - Ts[0:i]) * k * cross_area / L
         Q_sucs[0:i] = (Ts[0:i] - Ts[1:i+1]) * k * cross_area / L
         m = RHO * PI * D * D / 4 * L
