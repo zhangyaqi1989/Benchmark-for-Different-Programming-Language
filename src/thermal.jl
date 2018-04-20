@@ -70,7 +70,7 @@ end
 # println(maxTemp)
 end
 
-# @time main(N)
-main(N)
+@time main(N)
+# main(N)
 
 end
