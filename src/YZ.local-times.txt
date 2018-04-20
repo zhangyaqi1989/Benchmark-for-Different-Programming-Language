@@ -1,0 +1,5 @@
+C: 3.692980 s
+Fortran: 2.404881 s
+Java: 3.588108 s
+Python: 31.371847 s
+Javascript: 15.423439 s
