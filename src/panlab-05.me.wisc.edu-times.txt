@@ -1,0 +1,7 @@
+Julia: 5.505278 s
+C: 3.079148 s
+Fortran: 2.650153 s
+Java: 6.075767 s
+Python: 56.443110 s
+Javascript: 8.130516 s
+R: 124.804828 s

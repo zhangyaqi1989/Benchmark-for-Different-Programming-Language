@@ -7,7 +7,7 @@
 # run programs and measure times
 ##################################
 
-from subprocess import call, run
+from subprocess import call
 import time
 import socket
 from collections import OrderedDict
@@ -16,8 +16,8 @@ def measure_time(command, n_times = 1):
     """run command n_times and compute the average time"""
     start = time.time()
     for _ in range(n_times):
-        # call(command)
-        run(command)
+        call(command)
+        # run(command)
     end = time.time()
     return (end - start) / n_times
 
@@ -34,8 +34,8 @@ def main(command_dic, outfile, n_times = 1):
 
 
 if __name__ == "__main__":
-    # ("Julia", ["julia", "thermal.jl"]),
     command_dic = OrderedDict([
+                   ("Julia", ["julia", "thermal.jl"]),
                    ("C", ["./thermal_c"]),
                    ("Fortran", ["./thermal_f"]),
                    ("Java", ["java", "Thermal"]),
