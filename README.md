@@ -1,8 +1,9 @@
 # Benchmark for different languages
-Performace comparison between C, C++, modern Fortran (F95), Java, 
-[Julia](https://julialang.org/), Python. 
-Implementation in Python uses numpy and vectorization.
+Performace comparison between C, C++, modern Fortran (F95), Java, Javascript,
+[Julia](https://julialang.org/), Python, R
+Python implementation uses numpy and vectorization.
 
+<!--
 On Intel(R) Core(TM) i7-2600k CPU, the running time is listed below
 ```
 C: 5.014 s
@@ -26,11 +27,9 @@ Fortran: 13.615 s
 Julia: 4.032 s
 Python: 60.159 s
 ```
+-->
 
-The comparison is plotted in below figure
+The benchmark is shown in below figure.
 
 ![figure](images/fig-1.png)
-
-Julia can match the performance of C, which is very impressive. 
-It is worth to learn. 
 
