@@ -38,7 +38,8 @@ def main(N):
         Q_pres[1:i+1] = (Ts[1:i+1] - Ts[0:i]) * k * cross_area / L
         Q_sucs[0:i] = (Ts[0:i] - Ts[1:i+1]) * k * cross_area / L
         m = RHO * PI * D * D / 4 * L
-        Ts[:i+1] = Ts[:i+1] - (Q_convs[:i+1] + Q_radis[:i+1] + Q_pres[:i+1] + Q_sucs[:i+1]) * dt / (m * C)
+        Ts[:i+1] = (Ts[:i+1] - (Q_convs[:i+1] + Q_radis[:i+1] +
+                    Q_pres[:i+1] + Q_sucs[:i+1]) * dt / (m * C))
         if(Ts[0] > max_temp):
             max_temp = Ts[0]
     print("maxTemp = {:f}".format(max_temp))

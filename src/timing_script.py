@@ -14,6 +14,7 @@ from collections import OrderedDict
 
 def measure_time(command, n_times = 1):
     """run command n_times and compute the average time"""
+    call(command) # for warm up
     start = time.time()
     for _ in range(n_times):
         call(command)
@@ -30,11 +31,13 @@ def main(command_dic, outfile, n_times = 1):
         for language, command in command_dic.items():
             print(command)
             time = measure_time(command, n_times)
+            print(time)
             out_file.write("{}: {:.6f} s\n".format(language, time))
 
 
 if __name__ == "__main__":
     command_dic = OrderedDict([
+                   ("C++", ["./thermal_cpp"]),
                    ("Julia", ["julia", "thermal.jl"]),
                    ("C", ["./thermal_c"]),
                    ("Fortran", ["./thermal_f"]),
