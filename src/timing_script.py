@@ -46,4 +46,4 @@ if __name__ == "__main__":
                    ("Javascript", ["node", "Javascript/thermal.js"]),
                    ("R", ["Rscript", "R/thermal.R"]),
                    ])
-    main(command_dic, "times.txt", n_times = 4)
+    main(command_dic, "times.txt", n_times = 2)
