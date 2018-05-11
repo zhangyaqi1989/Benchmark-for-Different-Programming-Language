@@ -49,17 +49,17 @@ II. i7-6700 platform (Ubuntu 16)
 
 1. Julia: 0.6.2
 2. C: GCC 6.3.0
-3. Fortran: GFortran 5.4.1
+3. Fortran: GFortran 8.0.1
 4. Java: JDK 1.8.0
 5. Python: 3.6.3
 6. Javascript: nodejs 4.2.6
 7. R: 3.2.3
 
-III. E5-2600K platform (Ubuntu 16)
+III. i7-2600K platform (Ubuntu 16)
 
 1. Julia: 0.6.2
 2. C: GCC 6.3.0
-3. Fortran: GFortran 5.4.1
+3. Fortran: GFortran 5.5.1
 4. Java: JDK 1.8.0
 5. Python: 3.6.3
 6. Javascript: nodejs 8.11.1
