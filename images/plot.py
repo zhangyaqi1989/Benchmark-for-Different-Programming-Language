@@ -3,9 +3,11 @@
 # University of Wisconsin-Madison
 # Author: Yaqi Zhang
 ##################################
-# compare running time
-##################################
+"""
+plot and compare running time of different language
+"""
 
+# third party library
 import numpy as np
 import matplotlib.pyplot as plt
 plt.style.use("seaborn")
@@ -33,4 +35,3 @@ if __name__ == "__main__":
     plt.ylabel('time (s)')
     plt.legend(loc="upper left")
     plt.show()
-

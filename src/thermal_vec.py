@@ -3,14 +3,21 @@
 # University of Wisconsin-Madison
 # Author: Yaqi Zhang
 ##################################
-# simple thermal simulation
-##################################
+"""
+simple thermal simulation (vectorized implementation)
+"""
 
+# third party library
 import numpy as np
 
 
 def main(N):
-    """thermal simulation"""
+    """
+    thermal simulation
+
+    Args:
+        N: number of time steps
+    """
     DEPOSIT_T = 543.15
     max_temp = 0.0
     D = 0.004
